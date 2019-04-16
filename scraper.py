@@ -1,4 +1,4 @@
-# url = 'http://192.168.178.10/?LastReading'
+# url = 'http://192.168.178.10/?JSON'
 import json
 import requests
 import time
@@ -88,9 +88,9 @@ class Window(Frame):
         lightOutButton = Button(self, text = "LightLevel Outside",command= lambda: showData(17,"Graph"))
         lightInButton = Button(self, text = "LightLevel Inside",command= lambda: showData(18,"Graph"))
         windSpdButton = Button(self, text = "WindSpeed",command= lambda: showData(19,"Graph"))
-        windMin15sButton = Button(self, text = "Minimum Windspeed 15s",command= lambda: showData(20,"Graph"))
+        windMin15sButton = Button(self, text = "Windspeed 15s",command= lambda: showData(20,"Graph"))
         windMax15sButton = Button(self, text = "Maximum Windspeed 15s",command= lambda: showData(21,"Graph"))
-        windMax15mButton = Button(self, text = "Maximum Windspeed 15m",command= lambda: showData(22,"Graph"))
+        windMax15mButton = Button(self, text = "Maximum Windspeed 5m",command= lambda: showData(22,"Graph"))
         windVane15sButton = Button(self, text = "WindVane Position 15s",command= lambda: showData(23,"noGraph"))
         windDir15sButton = Button(self, text = "WindDirection 15s",command= lambda: showData(24,"noGraph"))
         windVane15mButton = Button(self, text = "WindVane Position 15m",command= lambda: showData(25,"noGraph"))
