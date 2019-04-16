@@ -1,0 +1,247 @@
+[
+    {
+    "id": 2 ,
+    "title": " DateTime ", 
+    "value": " 2019-4-16 17:12:25" 
+    },
+    {
+    "id": 3 ,
+    "title": " tempOutside ", 
+    "value": 21.06 
+    },
+    {
+    "id": 4 ,
+    "title": " minTempTime ", 
+    "value": " 6:54:1" 
+    },
+    {
+    "id": 5 ,
+    "title": " minTempVal ", 
+    "value": 6.44 
+    },
+    {
+    "id": 6 ,
+    "title": " maxTempTime ", 
+    "value": " 15:46:1" 
+    },
+    {
+    "id": 7 ,
+    "title": " maxTempVal ", 
+    "value": 24.88 
+    },
+    {
+    "id": 8 ,
+    "title": " tempOutMast ", 
+    "value": 24.40 
+    },
+    {
+    "id": 9 ,
+    "title": " tempInside ", 
+    "value": 20.88 
+    },
+    {
+    "id": 10 ,
+    "title": " humidityIn ", 
+    "value": 48.9 
+    },
+    {
+    "id": 11 ,
+    "title": " wifiTemp ", 
+    "value": 21.50 
+    },
+    {
+    "id": 12 ,
+    "title": " wifiBat ", 
+    "value": 3.804 
+    },
+    {
+    "id": 13 ,
+    "title": " humidityOut ", 
+    "value": 74.0 
+    },
+    {
+    "id": 14 ,
+    "title": " humidityDew ", 
+    "value": 21.5 
+    },
+    {
+    "id": 15 ,
+    "title": " tempHumSensOut ", 
+    "value": 24.15 
+    },
+    {
+    "id": 16 ,
+    "title": " avgAirPressure ", 
+    "value": 1011.5 
+    },
+    {
+    "id": 17 ,
+    "title": " airPressureDiffd ", 
+    "value": -0.7 
+    },
+    {
+    "id": 18 ,
+    "title": " airPressureTendency ", 
+    "value": 0 
+    },
+    {
+    "id": 19 ,
+    "title": " lightLevelOut ", 
+    "value": 10117.6 
+    },
+    {
+    "id": 20 ,
+    "title": " lightLevelIn ", 
+    "value": 989 
+    },
+    {
+    "id": 21 ,
+    "title": " windSpeed15s ", 
+    "value": 0.0 
+    },
+    {
+    "id": 22 ,
+    "title": " windSpeed15s ", 
+    "value": 0.0 
+    },
+    {
+    "id": 23 ,
+    "title": " windMax15s ", 
+    "value": 0.0 
+    },
+    {
+    "id": 24 ,
+    "title": " windMax5m ", 
+    "value": 0 
+    },
+    {
+    "id": 25 ,
+    "title": " windVane15s ", 
+    "value": 9.50 
+    },
+    {
+    "id": 26 ,
+    "title": " windDir15s ", 
+    "value": "ZZW" 
+    },
+    {
+    "id": 27 ,
+    "title": " windVane15min ", 
+    "value": 0.00 
+    },
+    {
+    "id": 28 ,
+    "title": " windDir15min ", 
+    "value": "" 
+    },
+    {
+    "id": 29 ,
+    "title": " windSpeedAvg ", 
+    "value": 0.0 
+    },
+    {
+    "id": 30 ,
+    "title": " windSpeed15m ", 
+    "value": 0.0 
+    },
+    {
+    "id": 31 ,
+    "title": " windSpeed12h ", 
+    "value": 0.0 
+    },
+    {
+    "id": 32 ,
+    "title": " rain15s ", 
+    "value": 0.0 
+    },
+    {
+    "id": 33 ,
+    "title": " rain3h ", 
+    "value": 0.0 
+    },
+    {
+    "id": 34 ,
+    "title": " rain24h ", 
+    "value": 0.0 
+    },
+    {
+    "id": 35 ,
+    "title": " mainsFrequency: ", 
+    "value": 50.000 
+    },
+    {
+    "id": 36 ,
+    "title": " mainsVoltage ", 
+    "value": 211.51 
+    },
+    {
+    "id": 37 ,
+    "title": " solarCurrent ", 
+    "value": 3.791 
+    },
+    {
+    "id": 38 ,
+    "title": " solarPowerFactor ", 
+    "value": -0.083 
+    },
+    {
+    "id": 39 ,
+    "title": " luxSmallPanel ", 
+    "value": 11390.1 
+    },
+    {
+    "id": 40 ,
+    "title": " dawnMoment ", 
+    "value": " 21:8:2" 
+    },
+    {
+    "id": 41 ,
+    "title": " duskMoment ", 
+    "value": " 6:12:47" 
+    },
+    {
+    "id": 42 ,
+    "title": " solarGenerated12h ", 
+    "value": 21817 
+    },
+    {
+    "id": 43 ,
+    "title": " waterUsage24h ", 
+    "value": 123.0 
+    },
+    {
+    "id": 44 ,
+    "title": " gasUsage24h ", 
+    "value": 0.047 
+    },
+    {
+    "id": 45 ,
+    "title": " averagesLast15s ", 
+    "value": 15 
+    },
+    {
+    "id": 46 ,
+    "title": " unoMillis ", 
+    "value": 74192849 
+    },
+    {
+    "id": 47 ,
+    "title": " unoOnTime ", 
+    "value": 0.9 
+    },
+    {
+    "id": 48 ,
+    "title": " megaMillis ", 
+    "value": 72537867 
+    },
+    {
+    "id": 49 ,
+    "title": " megaOnTime ", 
+    "value": 0.8 
+    },
+    {
+    "id": 50 ,
+    "title": " megaLocalTime ", 
+    "value": " 17:12:31" 
+    }
+    ]
