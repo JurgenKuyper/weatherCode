@@ -1,10 +1,6 @@
 # url = 'http://192.168.178.10/?JSON'
 import json
 import urllib.request
-import time
-from datetime import datetime
-from tkinter import *
-import matplotlib.pyplot as plt
 with urllib.request.urlopen("http://192.168.178.10/?JSON") as url:
     data = json.loads(url.read().decode())
     print(data)
