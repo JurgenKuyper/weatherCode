@@ -1,12 +1,12 @@
-# url = 'http://192.168.178.10/?JSON'
+# url = 'http://192.168.178.10/?LastReading'
 import json
 import requests
 import time
 from datetime import datetime
 from tkinter import *
 import matplotlib.pyplot as plt
-response = requests.get("https://raw.githubusercontent.com/JurgenMK/Weatherdata/master/newData.json")
-responseOld = requests.get("https://raw.githubusercontent.com/JurgenMK/Weatherdata/master/dataTest.json")
+response = requests.get("https://raw.githubusercontent.com/JurgenMK/weatherCode/master/newdata.json")
+responseOld = requests.get("https://raw.githubusercontent.com/JurgenMK/weatherCode/master/datatest.json")
 weatherList = json.loads(response.text)
 oldWeatherList = json.loads(responseOld.text)
 jsonDataList = [[],[]]
@@ -31,24 +31,24 @@ def getData():
         for x in range(0,1):
             if data['value'] not in jsonDataList[x]:
                 jsonDataList[x+1].append(data['value'])
-    print(jsonDataList)
+    #print(jsonDataList)
     #print(str(jsonDataList[1][1]))
 def showData(d,Type):
     getData()
     if Type == "Graph":
         if plt.figure(num=1):
             plt.close()
-        x = [str(jsonDataList[1][0]),str(jsonDataList[1][49])]
-        y = [jsonDataList[1][d],jsonDataList[1][d+49]]
-        textData = str(jsonDataList[0][d]),x,y, '\n'
+        x = [str(jsonDataList[1][0]),str(jsonDataList[1][50])]
+        y = [jsonDataList[1][d],jsonDataList[1][d+50]]
+        textData = str(jsonDataList[0][d+1]),x,y, '\n'
         text.insert(END,textData)
         del textData
         plt.plot(x,y)
         plt.show()
     else:
-        if plt.figure(num=1):
-            plt.close()
-        textData = str(jsonDataList[0][d]), str(jsonDataList[1][d]) + '\n'
+        # if plt.figure(num=1):
+        #     plt.close()
+        textData = str(jsonDataList[0][d+1]), str(jsonDataList[1][d]) + '\n'
         text.insert(END,textData)
         del textData
 
@@ -88,9 +88,9 @@ class Window(Frame):
         lightOutButton = Button(self, text = "LightLevel Outside",command= lambda: showData(17,"Graph"))
         lightInButton = Button(self, text = "LightLevel Inside",command= lambda: showData(18,"Graph"))
         windSpdButton = Button(self, text = "WindSpeed",command= lambda: showData(19,"Graph"))
-        windMin15sButton = Button(self, text = "Windspeed 15s",command= lambda: showData(20,"Graph"))
+        windMin15sButton = Button(self, text = "Minimum Windspeed 15s",command= lambda: showData(20,"Graph"))
         windMax15sButton = Button(self, text = "Maximum Windspeed 15s",command= lambda: showData(21,"Graph"))
-        windMax15mButton = Button(self, text = "Maximum Windspeed 5m",command= lambda: showData(22,"Graph"))
+        windMax15mButton = Button(self, text = "Maximum Windspeed 15m",command= lambda: showData(22,"Graph"))
         windVane15sButton = Button(self, text = "WindVane Position 15s",command= lambda: showData(23,"noGraph"))
         windDir15sButton = Button(self, text = "WindDirection 15s",command= lambda: showData(24,"noGraph"))
         windVane15mButton = Button(self, text = "WindVane Position 15m",command= lambda: showData(25,"noGraph"))
