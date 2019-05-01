@@ -38,9 +38,9 @@ def showData(d,Type):
     if Type == "Graph":
         if plt.figure(num=1):
             plt.close()
-        x = [str(jsonDataList[1][0]),str(jsonDataList[1][50])]
-        y = [jsonDataList[1][d],jsonDataList[1][d+50]]
-        textData = str(jsonDataList[0][d+1]),x,y, '\n'
+        x = [str(jsonDataList[1][0]),str(jsonDataList[1][49])]
+        y = [jsonDataList[1][d],jsonDataList[1][d+49]]
+        textData = str(jsonDataList[0][d]),x,y, '\n'
         text.insert(END,textData)
         del textData
         plt.plot(x,y)
@@ -48,7 +48,7 @@ def showData(d,Type):
     else:
         # if plt.figure(num=1):
         #     plt.close()
-        textData = str(jsonDataList[0][d+1]), str(jsonDataList[1][d]) + '\n'
+        textData = str(jsonDataList[0][d]), str(jsonDataList[1][d]) + '\n'
         text.insert(END,textData)
         del textData
 
